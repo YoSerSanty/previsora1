@@ -1,12 +1,17 @@
-{
-font-family: Arial, sans-serif;
-background-color: #2145;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.title{
+    padding: 20px;
 }
 
 header {
 background-color: rgb(44, 49, 91);
 color: #fff;
-padding: 20px;
 }
 
 nav {
@@ -53,4 +58,71 @@ background-color: #f2f2f2;
 color: #666;
 padding: 20px;
 text-align: center;
+}
+
+/*----------------CONTACTANOS--------------*/
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.contact-title {
+    display: flex;
+    background-color: #9e92ec;
+    grid-column: 1 / 4;
+    padding: 15px;
+    justify-content: space-around;
+}
+.formulario-name {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-around;
+}
+.formulario-message {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-around;   
+}
+.map {
+    padding: 20px;
+    grid-column: 3;
+    justify-self: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    background-color: rgb(44, 49, 91);
+    padding: 15px;
+}
+p {
+    margin-left: 20px;
+}
+.phone {
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mail {
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.location {
+    grid-column: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
